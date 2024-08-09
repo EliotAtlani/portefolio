@@ -1,43 +1,69 @@
+"use client";
+import BlurIn from "@/components/magicui/blur-in";
+import { OrbitingCirclesSection } from "@/components/test";
 import CardProject from "@/components/ui/card-project";
+import { FlipWords } from "@/components/ui/flip-words";
 import { Label } from "@/components/ui/label";
 import LinkSocialNetwork from "@/components/ui/link-social-network";
 import { projects } from "@/data/projects";
 import { socialNetworks } from "@/data/socialNetworks";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const words = [
+    "harvard student",
+    "full-stack developer",
+    "software engineer",
+  ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between min-w-1/2 mx-auto">
-      <section className="h-screen flex items-center justify-center">
-        <div className="flex flex-col gap-4">
-          <Label className="text-4xl font-bold">
-            Hello, I&apos;m Eliot Atlani 🙋‍♂️
+      <motion.section
+        className="flex lg:flex-row flex-col h-4/5 items-center justify-center gap-20 md:gap-8 py-20"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="flex flex-col ">
+          <BlurIn
+            word="Hello, I'm Eliot Atlani 🙋‍♂️"
+            className="text-2xl md:text-4xl font-bold md:text-start text-center"
+          />
+
+          <Label className=" text-md md:text-xl font-light text-muted-foreground  md:text-start text-center">
+            I&apos;m a
+            <FlipWords words={words} /> <br />
+            looking for a summer internship.
           </Label>
-          <Label className="text-xl font-light text-muted-foreground">
-            A student and software engineer.
-          </Label>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center md:justify-start mt-4">
             {socialNetworks.map((socialNetwork, index) => (
               <LinkSocialNetwork key={index} socialNetwork={socialNetwork} />
             ))}
           </div>
         </div>
-      </section>
-      <section className="flex flex-col text-center h-screen">
+        <OrbitingCirclesSection />
+      </motion.section>
+
+      <motion.section
+        className="flex flex-col text-center min-h-screen mb-20"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <Label className="text-2xl font-bold">
-          {" "}
           Here&apos;s my latest projects
         </Label>
         <Label className="font-light text-muted-foreground my-4">
-          {" "}
           Explore my latest projects, showcasing my skills in software
           development and engineering.
         </Label>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 place-items-center">
           {projects.map((project, index) => (
-            <CardProject key={index} project={project} />
+            <CardProject key={index} project={project} index={index} />
           ))}
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }

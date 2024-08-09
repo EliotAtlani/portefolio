@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "Ansible",
     ],
     github: "tst",
-    colorCard: "#262626",
+    colorCard: "text-[#8F1538]",
     colors: [
       [143, 21, 56],
       [217, 89, 126],
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: "FaceAuth",
     description:
       "FaceAuth is a facial recognition system that allows you to connect to your accounts without having to enter a password.",
-    href: "https://eliotatlani.fr",
+    href: "https://faceauth.eliotatlani.fr",
     technologies: [
       "ReactJS",
       "TypeScript",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     github: "tst",
-    colorCard: "#262626",
+    colorCard: "text-[#3B82F6]",
     colors: [
       [59, 130, 246],
       [139, 92, 246],
@@ -63,7 +63,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     github: "tst",
-    colorCard: "#262626",
+    colorCard: "text-[#77FCDF]",
     colors: [
       [16, 224, 92],
       [119, 252, 223],
@@ -80,12 +80,12 @@ export const projects: Project[] = [
     href: "https://apps.apple.com/fr/app/toss-2024/id6446198811",
     technologies: ["React Native", "ExpressJS", "MySQL", "Expo", "AWS EC2"],
     github: "tst",
-    colorCard: "#262626",
+    colorCard: "text-[#ffaa00]",
     colors: [
       [255, 170, 0],
       [245, 245, 10],
       [184, 115, 18],
     ],
-    borderColor: "border-[#b14e56]",
+    borderColor: "border-[#ffaa00]",
   },
 ];
