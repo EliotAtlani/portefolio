@@ -407,7 +407,7 @@ const Icons = {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger className="w-auto">
-          <img src="/techs/mongo.png" alt="MongoDB" className="h-12 w-12" />
+          <img src="/techs/mongo.png" alt="MongoDB" className="h-6 w-6" />
         </TooltipTrigger>
         <TooltipContent className="rounded-full">
           <p>MongoDb</p>

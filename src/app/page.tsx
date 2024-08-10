@@ -1,20 +1,18 @@
 "use client";
 import BlurIn from "@/components/magicui/blur-in";
-import { OrbitingCirclesSection } from "@/components/test";
+import { OrbitingCirclesSection } from "@/components/orbit-techs";
 import CardProject from "@/components/ui/card-project";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Label } from "@/components/ui/label";
 import LinkSocialNetwork from "@/components/ui/link-social-network";
+import Timeline from "@/components/ui/timeline";
+import { descriptions, milestones, words } from "@/data/pageContent";
 import { projects } from "@/data/projects";
 import { socialNetworks } from "@/data/socialNetworks";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Home() {
-  const words = [
-    "harvard student",
-    "full-stack developer",
-    "software engineer",
-  ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between min-w-1/2 mx-auto">
       <motion.section
@@ -42,6 +40,21 @@ export default function Home() {
           </div>
         </div>
         <OrbitingCirclesSection />
+      </motion.section>
+
+      <motion.section
+        className="flex flex-col text-center mb-20"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <Label className="px-10 md:px-0 text-2xl font-bold">
+          Here&apos;s my academic and professional timeline
+        </Label>
+        <div className="grid grid-cols-1 mt-12 place-items-center ">
+          <Timeline milestones={milestones} descriptions={descriptions} />
+        </div>
       </motion.section>
 
       <motion.section

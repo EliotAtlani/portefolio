@@ -15,3 +15,10 @@ export interface Project {
   colors: [number, number, number][];
   borderColor: string;
 }
+
+export interface Experience {
+  title: string;
+  place: string;
+  date: string;
+  category: "education" | "work";
+}
