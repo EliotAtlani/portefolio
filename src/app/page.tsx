@@ -28,7 +28,7 @@ export default function Home() {
             className="text-2xl md:text-4xl font-bold md:text-start text-center"
           />
 
-          <Label className=" text-md md:text-xl font-light text-muted-foreground  md:text-start text-center">
+          <Label className=" text-sm md:text-xl font-light text-muted-foreground  md:text-start text-center">
             I&apos;m a
             <FlipWords words={words} /> <br />
             looking for a summer internship.
