@@ -199,7 +199,7 @@ const Icons = {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger className="w-auto">
-          <img src="/techs/vitejs.png" alt="Vite.js" className="h-6 w-6" />
+          <img src="/techs/vitejs.png" alt="Vite.js" className="h-10 w-10" />
         </TooltipTrigger>
         <TooltipContent className="rounded-full">
           <p>ViteJS</p>
@@ -367,7 +367,7 @@ const Icons = {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger className="w-auto">
-          <img src="/techs/expo.png" alt="Expo" className="h-10 w-10" />
+          <img src="/techs/expo.png" alt="Expo" className="h-6 w-6" />
         </TooltipTrigger>
         <TooltipContent className="rounded-full">
           <p>ExpoGo</p>

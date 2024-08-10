@@ -5,7 +5,7 @@ export const projects: Project[] = [
     date: "July 2024",
     title: "Connectly",
     description:
-      "Connectly is live chat web application inspired by WhatsApp. Users can create groups, send messages, and share files to their friends in rea-time",
+      "Connectly is live chat web application inspired by WhatsApp. Users can create groups, send messages, and share files to their friends in real-time",
     href: "https://connectly.eliotatlani.fr",
     technologies: [
       "ReactJS",
@@ -17,7 +17,7 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Ansible",
     ],
-    github: "tst",
+    github: "https://github.com/EliotAtlani/portefolio-links",
     colorCard: "text-[#8F1538]",
     colors: [
       [143, 21, 56],
@@ -40,7 +40,7 @@ export const projects: Project[] = [
       "Pinecone",
       "Docker",
     ],
-    github: "tst",
+    github: "https://github.com/EliotAtlani/portefolio-links",
     colorCard: "text-[#3B82F6]",
     colors: [
       [59, 130, 246],
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     date: "July 2024",
     title: "FileSwap",
     description:
-      "FileSwap is a file converter that allows you to convert your files from one format to another, compress them, and resize them.",
+      "FileSwap is a versatile file converter that allows you to easily convert, compress, and resize your files across various formats.",
     href: "https://fileswap.eliotatlani.fr",
     technologies: [
       "ReactJS",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
       "GitHub Actions",
       "Docker",
     ],
-    github: "tst",
+    github: "https://github.com/EliotAtlani/portefolio-links",
     colorCard: "text-[#77FCDF]",
     colors: [
       [16, 224, 92],
@@ -79,7 +79,7 @@ export const projects: Project[] = [
       "The TOSS is a 4500-student sport tournament. The application allows you to follow the score of the matches, the ranking of the teams, and the schedule of the matches.",
     href: "https://apps.apple.com/fr/app/toss-2024/id6446198811",
     technologies: ["React Native", "ExpressJS", "MySQL", "Expo", "AWS EC2"],
-    github: "tst",
+    github: null,
     colorCard: "text-[#ffaa00]",
     colors: [
       [255, 170, 0],

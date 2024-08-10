@@ -10,7 +10,7 @@ export interface Project {
   description: string;
   href: string;
   technologies: string[];
-  github: string;
+  github: string | null;
   date: string;
   colors: [number, number, number][];
   borderColor: string;

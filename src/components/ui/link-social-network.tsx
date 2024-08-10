@@ -21,6 +21,7 @@ const LinkSocialNetwork = ({
           <Link
             href={socialNetwork.href}
             className=" bg-transparent border-[1px] border-muted px-2 py-1 rounded-md"
+            target="_blank"
           >
             <Image
               src={socialNetwork.svg}

@@ -25,20 +25,23 @@ const CardProject = ({
       viewport={{ once: true }}
     >
       <CardSpotlight className="h-96 w-96 relative" colors={project.colors}>
-        <div className="absolute top-4 right-4 z-50 cursor-pointer">
-          <Link
-            href={project.href}
-            className="bg-transparent border-[1px]  border-muted-foreground p-1 backdrop-blur-sm rounded-md inline-flex cursor-pointer"
-          >
-            <Image
-              src="/logos/github-mark.svg"
-              alt="Github"
-              width={24}
-              height={24}
-              className="p-1 cursor-pointer"
-            />
-          </Link>
-        </div>
+        {project.github && (
+          <div className="absolute top-4 right-4 z-50 cursor-pointer">
+            <Link
+              href={project.github}
+              className="bg-transparent border-[1px]  border-muted-foreground p-1 backdrop-blur-sm rounded-md inline-flex cursor-pointer"
+              target="_blank"
+            >
+              <Image
+                src="/logos/github-mark.svg"
+                alt="Github"
+                width={24}
+                height={24}
+                className="p-1 cursor-pointer"
+              />
+            </Link>
+          </div>
+        )}
         <div className="px-4 py-2 flex flex-col h-full">
           <p
             className={cn(
