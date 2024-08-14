@@ -50,7 +50,7 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <Label className="px-10 md:px-0 text-2xl font-bold">
-          Here&apos;s my academic and professional timeline
+          Academic and professional timeline
         </Label>
         <div className="grid grid-cols-1 mt-12 place-items-center ">
           <Timeline milestones={milestones} descriptions={descriptions} />
@@ -64,9 +64,7 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <Label className="text-2xl font-bold">
-          Here&apos;s my latest projects
-        </Label>
+        <Label className="text-2xl font-bold">Latest projects</Label>
         <Label className="font-light text-muted-foreground my-4">
           Explore my latest projects, showcasing my skills in software
           development and engineering.
