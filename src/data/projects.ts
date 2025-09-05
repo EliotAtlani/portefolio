@@ -2,11 +2,26 @@ import { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    date: "Sep 2025",
+    title: "AI-Powered News Summarizer & Newsletter",
+    description:
+      "An AI-driven system that fetches articles on chosen topics, selects the most relevant ones, generates concise summaries, and delivers personalized newsletters on a daily or weekly schedule.",
+    href: "https://news-ai.eliotatlani.fr",
+    technologies: ["Python", "AWS", "Pulumi", "Docker", "Gemini AI"],
+    github: "https://github.com/EliotAtlani/personal-news",
+    colorCard: "text-[#0B7285]",
+    colors: [
+      [11, 114, 133],
+      [94, 186, 202],
+    ],
+    borderColor: "border-[#0B7285]",
+  },
+  {
     date: "Summer 2025",
     title: "AIVA - AI Vocal Assistant",
     description:
       "AIVA is an AI-powered vocal assistant that helps users manage their tasks and schedule through voice commands.",
-    href: "https://aiva.eliotatlani.fr",
+    href: null,
     technologies: [
       "ReactJS",
       "TypeScript",
