@@ -6,8 +6,14 @@ export const words = [
   "software engineer",
 ];
 
-export const milestones = [50, 150, 250, 350];
+export const milestones = [50, 150, 250, 350, 450];
 export const descriptions: Experience[] = [
+  {
+    title: "Software Engineer Intern",
+    place: "CVS Health, New York",
+    date: "May 2025 - Aug 2025",
+    category: "work",
+  },
   {
     title: "MS Data Science",
     place: "Harvard University, Boston",

@@ -8,7 +8,7 @@ export interface Project {
   colorCard: string;
   title: string;
   description: string;
-  href: string;
+  href: string | null;
   technologies: string[];
   github: string | null;
   date: string;

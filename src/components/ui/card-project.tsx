@@ -24,24 +24,10 @@ const CardProject = ({
       transition={{ duration: 0.3, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
-      <CardSpotlight className="h-96 w-96 relative" colors={project.colors}>
-        {project.github && (
-          <div className="absolute top-4 right-4 z-50 cursor-pointer">
-            <Link
-              href={project.github}
-              className="bg-transparent border-[1px]  border-muted-foreground p-1 backdrop-blur-sm rounded-md inline-flex cursor-pointer"
-              target="_blank"
-            >
-              <Image
-                src="/logos/github-mark.svg"
-                alt="Github"
-                width={24}
-                height={24}
-                className="p-1 cursor-pointer"
-              />
-            </Link>
-          </div>
-        )}
+      <CardSpotlight
+        className="h-96 w-96 relative rounded-xl"
+        colors={project.colors}
+      >
         <div className="px-4 py-2 flex flex-col h-full">
           <p
             className={cn(
@@ -59,19 +45,37 @@ const CardProject = ({
             <p className="text-neutral-300 mt-4 relative z-20 text-sm grow">
               {project.description}
             </p>
-            <div className="mt-4 z-20 ">
-              <Link
-                target="_blank"
-                href={project.href}
-                className={cn(
-                  "text-sm border-[1px] px-2 py-1 rounded-md bg-transparent  inline-flex items-center justify-center",
+            <div className="mt-4 z-20 flex gap-2 justify-center">
+              {project.href && (
+                <Link
+                  target="_blank"
+                  href={project.href}
+                  className={cn(
+                    "text-sm border-[1px] px-2 py-1 rounded-[8px] bg-transparent  inline-flex items-center justify-center",
 
-                  project.borderColor
-                )}
-              >
-                <GlobeIcon size={16} className="mr-2" />
-                Website
-              </Link>
+                    project.borderColor
+                  )}
+                >
+                  <GlobeIcon size={16} className="mr-2" />
+                  Website
+                </Link>
+              )}
+
+              {project.github && (
+                <Link
+                  href={project.github}
+                  className="bg-transparent border-[1px] border-muted-foreground p-1.5 backdrop-blur-sm rounded-[8px] inline-flex cursor-pointer"
+                  target="_blank"
+                >
+                  <Image
+                    src="/logos/github-mark.svg"
+                    alt="Github"
+                    width={20}
+                    height={20}
+                    className="cursor-pointer"
+                  />
+                </Link>
+              )}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 ">

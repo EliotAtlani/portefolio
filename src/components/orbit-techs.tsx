@@ -10,14 +10,14 @@ import { useEffect, useState } from "react";
 export function OrbitingCirclesSection() {
   const [radius, setRadius] = useState<[number, number, number]>([
     80, 150, 220,
-  ]); // Default for larger screens
+  ]);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setRadius([40, 90, 150]); // Smaller radius for small screens
+        setRadius([40, 90, 150]);
       } else {
-        setRadius([80, 150, 220]); // Larger radius for larger screens
+        setRadius([80, 150, 220]);
       }
     };
 

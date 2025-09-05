@@ -59,14 +59,14 @@ function Item({
           <svg
             id="progress"
             width="10"
-            height="400"
-            viewBox="0 0 10 400"
+            height="500"
+            viewBox="0 0 10 500"
             style={{ overflow: "visible" }}
           >
             {/* The main timeline line */}
             <line
               x2="5"
-              y2="400"
+              y2="500"
               x1="5"
               y1="0"
               stroke="#ddd"
@@ -75,7 +75,7 @@ function Item({
             />
             <motion.line
               x2="5"
-              y2="400"
+              y2="500"
               x1="5"
               y1="0"
               stroke="#6d28d9"

@@ -10,7 +10,6 @@ import { descriptions, milestones, words } from "@/data/pageContent";
 import { projects } from "@/data/projects";
 import { socialNetworks } from "@/data/socialNetworks";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 export default function Home() {
   return (
@@ -31,7 +30,7 @@ export default function Home() {
           <Label className=" text-sm md:text-xl font-light text-muted-foreground  md:text-start text-center">
             I&apos;m a
             <FlipWords words={words} /> <br />
-            looking for a summer internship.
+            looking for a full-time position in SWE starting February 2026.
           </Label>
           <div className="flex gap-4 justify-center md:justify-start mt-4">
             {socialNetworks.map((socialNetwork, index) => (
