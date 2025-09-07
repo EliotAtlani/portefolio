@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "AI-Powered News Summarizer & Newsletter",
     description:
       "An AI-driven system that fetches articles on chosen topics, selects the most relevant ones, generates concise summaries, and delivers personalized newsletters on a daily or weekly schedule.",
-    href: "https://news-ai.eliotatlani.fr",
+    href: null,
     technologies: ["Python", "AWS", "Pulumi", "Docker", "Gemini AI"],
     github: "https://github.com/EliotAtlani/personal-news",
     colorCard: "text-[#0B7285]",
